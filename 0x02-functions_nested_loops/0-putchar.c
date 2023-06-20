@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-_puthcar("_");
-_puthcar("p");
-_puthcar("u");
-_puthcar("t");
-_puthcar("h");
-_puthcar("c");
-_puthcar("h");
-_puthcar("a");
-_puthcar("r");
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_puchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
