@@ -1,24 +1,22 @@
 #include "main.h"
-
 /**
 * _islower - checks for lowercase character
 * @c: the character to check
 * Return: 1 if c is lowercase, 0 otherwise
 */
-int print_sign(int n) 
+int print_sign(int n)
 {
-if (n > 0) 
+if (n > 0)
 {
-_putchar("+");
+_putchar('+');
 return (1);
-} 
-else if (n == 0) {
-_putchar("0");
-return (0);
-} 
-else 
+} else if (n == 0)
 {
-_putchar("-"); 
+_putchar(48);
+return (0);
+} else if (n < 0)
+{
+_putchar('-');
+}
 return (-1);
-    }
 }
