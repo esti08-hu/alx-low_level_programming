@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
-* _abs - checks for lowercase character
-* @c: the character to check
-* Return: n if n > is lowercase, -n otherwise
+* _abs - computes the absolute value of an integer
+* @n: the int to check
+* Return: the absolute value of int
 */
 int _abs(int n)
 {
