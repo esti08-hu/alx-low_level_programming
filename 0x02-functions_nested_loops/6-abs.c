@@ -3,7 +3,7 @@
 /**
 * _abs - checks for lowercase character
 * @c: the character to check
-* Return: 1 if c is lowercase, 0 otherwise
+* Return: n if n > is lowercase, c otherwise
 */
 int _abs(int n)
 {
