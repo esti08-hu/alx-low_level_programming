@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * This function takes nt to. 
- * @a: pointer to first value
- * @b: pointer to second value
- */
-
+* swap_int - swaps the values of two integers
+* @a: pointer to first value
+* @b: pointer to second value
+*/
 void swap_int(int *a, int *b)
 {
 int temp = *a;
