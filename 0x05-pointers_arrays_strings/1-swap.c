@@ -5,7 +5,8 @@
  * third temporary variable. After the function call, the values of the two integers will be
  * swapped.
  */
-void swap_int(int *a, int *b) {
+void swap_int(int *a, int *b)
+{
     int temp = *a;
     *a = *b;
     *b = temp;
