@@ -5,20 +5,21 @@
  */
 void times_table()
 {
-    int i, j;
+    int i, j, k;
     for (i = 0; i <= 9; i++)
     {
         for (j = 0; j <= 9; j++)
         {
             if (j != 9)
             {
-                _putchar("%d", i * j);
+                k = i * j;
+                _putchar("%d", k);
                 _putchar(",");
-                _putchar(" ", i * j);
+                _putchar(" ");
             }
             else
             {
-                _putchar("%d", i * j);
+                _putchar("%d", k);
             }
         }
         printf("\n");
