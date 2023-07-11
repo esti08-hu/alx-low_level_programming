@@ -5,13 +5,17 @@
  * Return: Always 0 (Success)
  */
 
-int main() {
-    int numTerms = 98;
-    int first = 1, second = 2;
-
+int main()
+{
+ 
+    int first, second, numTerms;
+    first = 1;
+    second = 2;
+    numTerms = 98;
     printf("%d, %d", first, second);
 
-    for (int i = 3; i <= numTerms; ++i) {
+    for (int i = 3; i <= numTerms; ++i)
+    {
         int next = first + second;
         printf(", %d", next);
 
