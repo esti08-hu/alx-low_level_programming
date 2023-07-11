@@ -10,24 +10,28 @@ void times_table()
     {
         for (j = 0; j <= 9; j++)
         {
-                  k = i * j;
-            if (k < 10)
+            k = i * j;
+            if (j = 0)
             {
-          
-              _putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
+                _putchar('0');
             }
-            else if(k >= 10)
+            if (k < 10 && j != 0)
+            {
+
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                _putchar(k + '0');
+            }
+            else if (k >= 10)
             {
                 _putchar(',');
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+                _putchar(' ');
+                _putchar((k / 10) + '0');
+                _putchar((k % 10) + '0');
             }
         }
-       _putchar('\n');
+        _putchar('\n');
     }
     return;
 }
