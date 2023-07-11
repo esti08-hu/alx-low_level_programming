@@ -10,16 +10,21 @@ void times_table()
     {
         for (j = 0; j <= 9; j++)
         {
-            if (j != 9)
+                  k = i * j;
+            if (k < 10)
             {
-                k = i * j;
-                _putchar(k + '0');
-                _putchar(',');
-                _putchar(' ');
+          
+              _putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
             }
-            else
+            else if(k >= 10)
             {
-                _putchar(k + '0');
+                _putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
             }
         }
        _putchar('\n');
