@@ -6,25 +6,21 @@
  */
 int main(void)
 {
-    long long a = 1, b = 2, c, i;
+    int numTerms = 98;
+    int first = 1, second = 2;
 
-    printf("%lld, %lld, ", a, b);
+    printf("%d, %d", first, second);
 
-    for (i = 3; i <= 98; i++)
+    for (int i = 3; i <= numTerms; ++i)
     {
-        c = a + b;
-        printf("%lld", c);
-        a = b;
-        b = c;
+        int next = first + second;
+        printf(", %d", next);
 
-        if (i < 98)
-        {
-            printf(", ");
-        }
-       
+        first = second;
+        second = next;
     }
 
     printf("\n");
 
-    return (0);
+    return 0;
 }
