@@ -13,13 +13,13 @@ void times_table()
             if (j != 9)
             {
                 k = i * j;
-                _putchar("%d", k);
+                _putchar(k + '0');
                 _putchar(",");
                 _putchar(" ");
             }
             else
             {
-                _putchar("%d", k);
+                _putchar(k + '0');
             }
         }
         printf("\n");
