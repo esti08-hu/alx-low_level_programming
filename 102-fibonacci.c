@@ -14,7 +14,7 @@ int main(void)
         {
             printf("%ld, ", t1);
         }
-        else if (i == 20365011074)
+        else
         {
             printf("%ld\n", t1);
         }
@@ -22,7 +22,6 @@ int main(void)
         t1 = t2;
         t2 = nextTerm;
     }
-    printf("\n");
 
     return (0);
 }
