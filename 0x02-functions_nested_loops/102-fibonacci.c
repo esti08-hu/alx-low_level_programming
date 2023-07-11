@@ -9,7 +9,13 @@ int main(void){
 
 
     for (i = 1; i <= n; ++i) {
-        printf("%ld, ", t1);
+       if (i != 20365011074)
+		{
+			printf("%ld, ", t1);
+		} else
+		{
+			printf("%ld\n", t1);
+		}
         nextTerm = t1 + t2;
         t1 = t2;
         t2 = nextTerm;
