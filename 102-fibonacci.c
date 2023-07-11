@@ -6,22 +6,25 @@
  */
 int main(void)
 {
-    long int t1 = 1, t2 = 2, nextTerm;
-    int i;
-    for (i = 1; i <= 50; ++i)
-    {
-        if (t1 != 20365011074)
-        {
-            printf("%ld, ", t1);
-        }
-        else
-        {
-            printf("%ld\n", t1);
-        }
-        nextTerm = t1 + t2;
-        t1 = t2;
-        t2 = nextTerm;
-    }
+	long int i, j, k, next;
 
-    return (0);
+	j = 1;
+
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
+	{
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
+	}
+
+	return (0);
 }
