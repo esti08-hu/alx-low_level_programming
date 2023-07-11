@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 /**
- *  prints the first 50 Fibonacci numbers, starting with 1 and 2
+ * main - finds and prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2
  * followed by a new line
- * Return: Always 0 (Success)
+ * Return: ALways 0 (Success)
  */
 
 int main()
@@ -25,5 +27,5 @@ int main()
 
     printf("\n");
 
-    return 0;
+    return (0);
 }
