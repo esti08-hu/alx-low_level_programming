@@ -5,7 +5,7 @@
  * Return: Always 0 (Success)
  */
 int main(void){
-     int n=0, i, t1 = 0, t2 = 1, nextTerm;
+     long int n=0, i, t1 = 0, t2 = 1, nextTerm;
 
 
     for (i = 1; i <= n; ++i) {
