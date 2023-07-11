@@ -18,7 +18,3 @@ int multiples()
     printf("%d", sum);
     return sum;
 }
-int main()
-{
-    multiples();
-}
