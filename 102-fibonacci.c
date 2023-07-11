@@ -14,12 +14,12 @@ int main(void)
 
 	for (i = 1; i <= 50; ++i)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld, ", j);
-		} else
+		if (j == 20365011074)
 		{
 			printf("%ld\n", j);
+		} else
+		{
+			printf("%ld, ", j);
 		}
 		next = j + k;
 		j = k;
