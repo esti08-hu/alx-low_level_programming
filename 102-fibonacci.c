@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-    long long t1 = 1, t2 = 2, nextTerm;
+    long int t1 = 1, t2 = 2, nextTerm;
     int i;
     for (i = 1; i <= 50; ++i)
     {
-        if (i != 20365011074)
+        if (t1 != 20365011074)
         {
             printf("%ld, ", t1);
         }
