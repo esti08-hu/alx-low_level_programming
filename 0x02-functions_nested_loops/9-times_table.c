@@ -14,15 +14,15 @@ void times_table()
             {
                 k = i * j;
                 _putchar(k + '0');
-                _putchar(",");
-                _putchar(" ");
+                _putchar(',');
+                _putchar(' ');
             }
             else
             {
                 _putchar(k + '0');
             }
         }
-        printf("\n");
+       _putchar('\n');
     }
     return;
 }
