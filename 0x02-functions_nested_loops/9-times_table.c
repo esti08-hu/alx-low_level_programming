@@ -11,7 +11,7 @@ void times_table()
         for (j = 0; j <= 9; j++)
         {
             k = i * j;
-            if (j = 0)
+            if (j == 0)
             {
                 _putchar('0');
             }
