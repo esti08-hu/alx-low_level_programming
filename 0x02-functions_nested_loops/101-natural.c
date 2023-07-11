@@ -4,7 +4,7 @@
  * of 3 or 5 below 1024
  * Return: Always 0 (Success)
  */
-int multiples()
+int main()
 {
     int i;
     int sum = 0;
@@ -16,5 +16,6 @@ int multiples()
         }
     }
     printf("%d", sum);
-    return sum;
+    printf("\n");
+    return (0);
 }
