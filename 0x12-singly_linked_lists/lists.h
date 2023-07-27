@@ -1,14 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
-#include <stdio.h>
 
-
-/**
- * print_list - prints all the elements of a linked list
- * @h: pointer to the list_t list to print
- *
- * Return: the number of nodes printed
- */
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
