@@ -16,5 +16,5 @@ char *rot13(char *str) {
         }
         p++;
     }
-    return str;
+    return (str);
 }
