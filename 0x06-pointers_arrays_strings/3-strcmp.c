@@ -20,5 +20,5 @@ return (0);
 s1++;
 s2++;
 }
-return (int)(*s1 - *s2);
+return (*s1 - *s2);
 }
