@@ -6,13 +6,15 @@
  */
 void print_number(int n)
 {
-int divisor = 1;
+int divisor;
 
 if (n < 0)
 {
-_putchar('-');
 n = -n;
+_putchar('-');
+
 }
+divisor = 1;
 while (n / divisor >= 10)
 {
 divisor *= 10;
