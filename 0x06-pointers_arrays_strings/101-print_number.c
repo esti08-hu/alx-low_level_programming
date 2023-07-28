@@ -4,9 +4,10 @@
  * print_number - prints an integer;
  * @n: integer to be printed;
  */
+
 void print_number(int n)
 {
-int divisor;
+unsigned int divisor;
 
 if (n < 0)
 {
