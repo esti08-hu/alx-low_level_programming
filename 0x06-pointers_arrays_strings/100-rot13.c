@@ -6,20 +6,23 @@
  *
  * Return: the resulting string
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
-char *p = str;
-while (*p != '\0')
-{
-if ((*p >= 'a' && *p <= 'm') || (*p >= 'A' && *p <= 'M'))
-{
-*p += 13;
-}
-else if ((*p >= 'n' && *p <= 'z') || (*p >= 'N' && *p <= 'Z'))
-{
-*p -= 13;
-}
-p++;
-}
-return (str);
+    int i, j;
+    const char *a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    const char *b = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        for (j = 0; j < 52; j++)
+        {
+            if (s[i] == a[j])
+            {
+                s[i] = b[j];
+                break;
+            }
+        }
+    }
+
+    return (s);
 }
