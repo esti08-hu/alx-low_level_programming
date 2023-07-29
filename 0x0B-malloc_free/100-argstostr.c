@@ -9,17 +9,17 @@
  */
 char *argstostr(int ac, const char **av)
 {
-    size_t i, j, k, size;
+    int i, j, k, length;
     char *arg;
 
-    size = 0;
+    length = 0;
 
     for (i = 0; i < (size_t)ac; i++)
     {
-        size += strlen(av[i]) + 1; /* Add length of string plus newline */
+        length += strlen(av[i]) + 1;
     }
 
-    arg = calloc(size, sizeof(*arg));
+    arg = calloc(length, sizeof(*arg));
     if (arg == NULL)
     {
         return (NULL);
