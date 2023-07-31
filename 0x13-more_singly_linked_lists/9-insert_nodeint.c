@@ -38,7 +38,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		current = current->next;
 		count++;
 	}
-	if (current == NULL && count < idx)
+	if (count < idx || (current == NULL && count == idx))
 	{
 		free(new_node);
 		return (NULL);
