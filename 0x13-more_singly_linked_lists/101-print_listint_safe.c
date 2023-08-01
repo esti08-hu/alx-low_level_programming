@@ -6,9 +6,13 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count = 0;
-	const listint_t *slow = head;
-	const listint_t *fast = head;
+	size_t count;
+	const listint_t *slow;
+	const listint_t *fast;
+
+	count = 0;
+	slow = head;
+	fast = head;
 
 	while (slow != NULL && fast != NULL && fast->next != NULL)
 	{
