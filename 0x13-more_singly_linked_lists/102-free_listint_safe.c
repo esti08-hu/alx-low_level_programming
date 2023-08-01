@@ -31,6 +31,8 @@ size_t free_listint_safe(listint_t **h)
 		else
 		{
 			free(current);
+			current = NULL;
+			len++;
 			break;
 		}
 	}
