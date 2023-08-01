@@ -22,7 +22,7 @@ size_t free_listint_safe(listint_t **h)
 		free((void *)tmp);
 		count++;
 		if (slow == fast)
-        {
+		{
 			tmp = slow;
 			slow = slow->next;
 			free((void *)tmp);
