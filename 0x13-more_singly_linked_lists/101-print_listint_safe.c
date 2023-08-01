@@ -9,7 +9,7 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *tmp_node = NULL;
 	const listint_t *loop_node = NULL;
 	size_t count = 0;
-	size_t new_n;
+	size_t new_node;
 
 	tmp_node = head;
 	while (tmp_node)
@@ -18,8 +18,8 @@ size_t print_listint_safe(const listint_t *head)
 		count++;
 		tmp_node = tmp_node->next;
 		loop_node = head;
-		new_n = 0;
-		while (new_n < count)
+		new_node = 0;
+		while (new_node < count)
 		{
 			if (tmp_node == loop_node)
 			{
@@ -27,7 +27,7 @@ size_t print_listint_safe(const listint_t *head)
 				return (count);
 			}
 			loop_node = loop_node->next;
-			new_n++;
+			new_node++;
 		}
 		if (!head)
 			exit(98);
