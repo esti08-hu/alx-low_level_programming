@@ -6,8 +6,8 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *tmp_node = NULL;
-	const listint_t *loop_node = NULL;
+	const listint_t *tmp_node;
+	const listint_t *loop_node;
 	size_t count = 0;
 	size_t new_node;
 
