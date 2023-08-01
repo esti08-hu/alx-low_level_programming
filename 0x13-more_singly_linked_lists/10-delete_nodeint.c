@@ -32,7 +32,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		count++;
 	}
 
-	if (current == NULL || current->next == NULL)
+	if (current == NULL || current->next == NULL || count != index - 1)
 	{
 		return (-1);
 	}
