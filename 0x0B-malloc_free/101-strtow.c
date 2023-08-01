@@ -24,6 +24,7 @@ int count_word(char *s)
 			w++;
 		}
 	}
+
 	return (w);
 }
 /**
@@ -69,6 +70,8 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
+
 	matrix[k] = NULL;
+
 	return (matrix);
 }
