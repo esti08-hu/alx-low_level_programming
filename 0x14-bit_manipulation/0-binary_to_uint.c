@@ -20,16 +20,10 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	sum = 0;
-	num = 1;
-
-	for (; i >= 0; i--)
+	for (num = 1, sum = 0, i--; i >= 0; i--, num *= 2)
 	{
 		if (b[i] == '1')
-		{
 			sum += num;
-		}
-		num *= 2;
 	}
 
 	return (sum);
