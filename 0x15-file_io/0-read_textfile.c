@@ -25,9 +25,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (file == NULL)
 	{
 		return (0);
-    }
+	}
 
-	
 	bytesRead = fread(buffer, sizeof(char), letters, file);
 
 	if (bytesRead <= 0)
