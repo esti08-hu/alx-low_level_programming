@@ -12,19 +12,23 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	ssize_t bytesRead, bytesWritten;
+	FILE *file;
+	char buffer[letters + 1];
+
 	if (filename == NULL)
 	{
 		return (0);
 	}
 
-	FILE *file = fopen(filename, "r");
+	file = fopen(filename, "r");
 	if (file == NULL)
 	{
 		return (0);
     }
 
-	char buffer[letters + 1];
-	ssize_t bytesRead = fread(buffer, sizeof(char), letters, file);
+	
+	bytesRead = fread(buffer, sizeof(char), letters, file);
 
 	if (bytesRead <= 0)
 	{
@@ -34,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer[bytesRead] = '\0';
 
-	ssize_t bytesWritten = fwrite(buffer, sizeof(char), bytesRead, stdout);
+	bytesWritten = fwrite(buffer, sizeof(char), bytesRead, stdout);
 
 	fclose(file);
 
