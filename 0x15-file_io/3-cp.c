@@ -78,17 +78,17 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO,
 					"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
-	 		exit(98);
-	    }
+			exit(98);
+		}
 
 	    write_result = write(file_to, buffer, read_result);
-	    if (file_to == -1 || write_result == -1)
-	    {
+		if (file_to == -1 || write_result == -1)
+		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
-	    }
+		}
 
 		read_result = read(file_from, buffer, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
