@@ -12,12 +12,12 @@ unsigned int binary_to_uint(const char *b)
 	int length;
 
 	if (b == NULL)
-		return 0;
+		return (0);
 
 	for (length = 0; b[length]; length++)
 	{
 		if (b[length] != '0' && b[length] != '1')
-			return 0;
+			return (0);
 	}
 
 	for (power = 1, total = 0, length--; length >= 0; length--, power *= 2)
@@ -26,5 +26,5 @@ unsigned int binary_to_uint(const char *b)
 			total += power;
 	}
 
-	return total;
+	return (total);
 }
